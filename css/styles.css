@@ -1,0 +1,84 @@
+/* Estilos generales de toda la página */ body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f9; color: #333333; line-height: 1.6; }
+
+/* Menú de navegación */ header { background-color: #292b40; padding: 20px; }
+
+nav { display: flex; justify-content: space-between; align-items: center; }
+
+.logo { color: white; font-size: 22px; font-weight: bold; }
+
+nav ul { display: flex; gap: 20px; list-style: none; }
+
+nav a { color: white; text-decoration: none; }
+
+nav a:hover { color: #a9a4ff; }
+
+/* Presentación principal */ .hero { background-color: #e8e7ff; text-align: center; padding: 60px 20px; }
+
+.hero h1 { font-size: 36px; }
+
+.hero h1 span { color: #6258d9; }
+
+.hero h2 { font-size: 22px; color: #555555; }
+
+.hero p { max-width: 600px; margin: 20px auto; }
+
+/* Botones */ .button { display: inline-block; background-color: #6258d9; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; }
+
+.button:hover { background-color: #453bb5; }
+
+/* Secciones */ .section { padding: 40px 10%; }
+
+.section h2 { color: #292b40; }
+
+.section-heading { margin-bottom: 25px; }
+
+.eyebrow { color: #6258d9; font-weight: bold; font-size: 13px; }
+
+/* Tarjeta de presentación */ .about-card { background-color: white; padding: 25px; border-radius: 8px; }
+
+/* Experiencia profesional */ .section-alt { background-color: #e8e9f2; }
+
+.experience-card { background-color: white; padding: 25px; border-radius: 8px; }
+
+.experience-top { display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+
+.company { color: #6258d9; font-weight: bold; }
+
+.period { color: #666666; }
+
+.notice { color: #666666; font-size: 13px; font-style: italic; }
+
+/* Tarjeta de proyectos */ .projects-grid { display: flex; flex-wrap: wrap; gap: 25px; }
+
+.project-card { background-color: white; width: 350px; max-width: 100%; border-radius: 8px; overflow: hidden; }
+
+.project-image { width: 100%; height: 200px; object-fit: contain; background-color: #eeeeee; }
+
+.project-content { padding: 20px; }
+
+.project-label { color: #6258d9; font-size: 12px; font-weight: bold; }
+
+/* Pie de página */ footer { background-color: #292b40; color: white; text-align: center; padding: 20px; }
+
+/* Adaptación para celulares */ @media (max-width: 600px) { nav { flex-direction: column; }
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.hero h1 {
+    font-size: 28px;
+}
+
+.experience-top {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section {
+    padding: 30px 5%;
+}
+
+}
